@@ -5,6 +5,6 @@ st.sidebar.header("Esta aplicación es solo un demo")
 #st.sidebar.image("")
 boton = st.button("globos")
 if boton:
-  st.balloon()
+  st.balloons()
   
   
