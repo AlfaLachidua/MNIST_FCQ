@@ -18,9 +18,9 @@ if uploaded_file is not None:
   #aquí estoy llamando la función teachable machine, va a leer la imagen e importar el modelo keras
   #la salida de esta función va a ser una etiqueta 0 si es un perro, 1 si es un gato
   label = teachable_machine_classification(image, 'keras_model.h5')
-  if label == 1:
+  if label == 0:
     st.write('Es un delfín') 
-  elif label == 0:
+  elif label == 1:
     st.write('Es un pinguino') 
 
   else:
